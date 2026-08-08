@@ -11,14 +11,6 @@
 </head>
 <body>
 
-<div class="mobile-topbar">
-	<span class="name">Amitabha Ghosh</span>
-	<button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.sidebar').classList.toggle('open');document.querySelector('.sidebar-backdrop').classList.toggle('open');">
-		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
-	</button>
-</div>
-<div class="sidebar-backdrop" onclick="document.querySelector('.sidebar').classList.remove('open');this.classList.remove('open');"></div>
-
 <aside class="sidebar">
 	<div class="sidebar-photo">
 		<img src="images/capecod_profile.jpeg" alt="Amitabha Ghosh">
@@ -43,6 +35,23 @@
 		<a href="https://www.linkedin.com/in/amitabha-ghosh/" target="_blank" title="LinkedIn" aria-label="LinkedIn"><span style="font-weight:700;font-size:11px;">in</span></a>
 	</div>
 </aside>
+
+<button type="button" class="quicknav-toggle" aria-expanded="false" aria-label="Quick navigation">
+	<span class="quicknav-bars"><span></span><span></span><span></span></span>
+</button>
+<div class="quicknav-panel">
+	<nav aria-label="Quick navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="talks.html">Talks</a></li>
+			<li><a href="teaching.html">Teaching</a></li>
+			<li><a href="books.html">Books</a></li>
+			<li><a href="puzzles.html" class="active">Puzzles</a></li>
+		</ul>
+	</nav>
+</div>
 
 <main class="main-content">
 <div class="main-inner">
@@ -143,5 +152,6 @@
 })();
 </script>
 
+<script src="site.js"></script>
 </body>
 </html>

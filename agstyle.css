@@ -259,70 +259,29 @@ img {
 }
 
 /* ---------------------------------------------------------------
-   Mobile top bar + backdrop
+   Mobile: stacked top nav + floating quick-nav
    --------------------------------------------------------------- */
 
-.mobile-topbar {
+.quicknav-toggle {
   display: none;
 }
 
-.sidebar-backdrop {
+.quicknav-panel {
   display: none;
 }
 
 @media (max-width: 900px) {
-  .mobile-topbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 60;
-    background: var(--color-bg-soft);
-    border-bottom: 1px solid var(--color-border);
-    padding: 0.8em 1.1em;
-  }
-
-  .mobile-topbar .name {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 1rem;
-  }
-
-  .menu-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.3em;
-    color: var(--color-text);
-    line-height: 0;
-  }
-
-  .menu-toggle svg {
-    width: 24px;
-    height: 24px;
-    stroke: currentColor;
-  }
-
   .sidebar {
-    top: 0;
-    bottom: 0;
-    width: min(80vw, 300px);
-    transform: translateX(-100%);
-    transition: transform var(--transition-med);
-    box-shadow: 10px 0 30px -14px rgba(26, 29, 35, 0.2);
+    position: static;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    padding: 2em 6vw 1.8em;
   }
 
-  .sidebar.open {
-    transform: translateX(0);
-  }
-
-  .sidebar-backdrop.open {
-    display: block;
-    position: fixed;
-    inset: 0;
-    background: rgba(26, 29, 35, 0.35);
-    z-index: 55;
+  .sidebar-photo {
+    max-width: 220px;
   }
 
   .main-content {
@@ -337,6 +296,129 @@ img {
 
   .topic-lead {
     font-size: 1rem;
+  }
+
+  .quicknav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 50%;
+    background: var(--color-accent-vibrant);
+    box-shadow: 0 8px 20px rgba(26, 29, 35, 0.28);
+    z-index: 70;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(12px);
+    transition: opacity var(--transition-fast), transform var(--transition-fast),
+      visibility var(--transition-fast);
+    cursor: pointer;
+  }
+
+  .quicknav-toggle.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .quicknav-bars {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+  }
+
+  .quicknav-bars span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: transform var(--transition-fast), opacity var(--transition-fast);
+  }
+
+  .quicknav-bars span:nth-child(1) { top: 0; }
+  .quicknav-bars span:nth-child(2) { top: 6px; }
+  .quicknav-bars span:nth-child(3) { top: 12px; }
+
+  .quicknav-toggle.is-open .quicknav-bars span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .quicknav-toggle.is-open .quicknav-bars span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .quicknav-toggle.is-open .quicknav-bars span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .quicknav-panel {
+    display: block;
+    position: fixed;
+    bottom: 84px;
+    right: 22px;
+    width: 220px;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(26, 29, 35, 0.22);
+    z-index: 69;
+    padding: 0.7em;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(8px);
+    transition: opacity var(--transition-fast), transform var(--transition-fast),
+      visibility var(--transition-fast);
+  }
+
+  .quicknav-panel.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .quicknav-panel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .quicknav-panel li {
+    margin: 0 0 0.25em;
+  }
+
+  .quicknav-panel a {
+    display: block;
+    padding: 0.55em 0.7em;
+    border-radius: 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .quicknav-panel a:hover {
+    background: var(--color-accent-blue-soft);
+    color: var(--color-accent-blue);
+    text-decoration: none;
+  }
+
+  .quicknav-panel a.active {
+    color: var(--color-accent-vibrant);
   }
 }
 
