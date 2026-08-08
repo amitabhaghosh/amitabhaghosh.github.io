@@ -647,8 +647,13 @@ footer.site-footer a {
 
 .topic-media img {
   width: 100%;
-  border-radius: var(--radius);
   display: block;
+  padding: 10px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 3px rgba(26, 29, 35, 0.04);
+  box-sizing: border-box;
 }
 
 .topic-text {
@@ -724,9 +729,12 @@ footer.site-footer a {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.6em;
-  margin: 0.9em 0 0;
-  padding: 0.9em 1em 0;
-  border-top: 1px dashed var(--color-border);
+  margin: 1.3em 0 0;
+  padding: 1.3em 1.5em;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 3px rgba(26, 29, 35, 0.04);
 }
 
 .topic-links-label {
