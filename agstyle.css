@@ -155,19 +155,18 @@ img {
 }
 
 .sidebar .role {
-  font-size: 0.7rem;
-  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-accent-vibrant);
-  font-weight: 700;
+  color: #7a6a9c;
+  font-weight: 500;
   margin: 0 0 2em;
-  line-height: 1.6;
-  white-space: nowrap;
+  line-height: 1.9;
 }
 
 .sidebar .role .company {
-  color: var(--color-accent-blue);
-  font-weight: 600;
+  color: #7a6a9c;
+  font-weight: 500;
 }
 
 .sidebar .role .company a {
