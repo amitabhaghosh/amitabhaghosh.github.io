@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amitabha Ghosh — Teaching</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="agstyle.css?v=3">
+</head>
+<body>
+
+<div class="mobile-topbar">
+	<span class="name">Amitabha Ghosh</span>
+	<button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.sidebar').classList.toggle('open');document.querySelector('.sidebar-backdrop').classList.toggle('open');">
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
+	</button>
+</div>
+<div class="sidebar-backdrop" onclick="document.querySelector('.sidebar').classList.remove('open');this.classList.remove('open');"></div>
+
+<aside class="sidebar">
+	<div class="sidebar-photo">
+		<img src="images/capecod_profile.jpeg" alt="Amitabha Ghosh">
+	</div>
+	<h1>Amitabha Ghosh</h1>
+	<p class="credentials">Ph.D. USC, Postdoc Princeton</p>
+	<p class="role">Proactive Intelligence<br><span class="company"><a href="https://www.apple.com" target="_blank">Apple Inc.</a></span></p>
+
+	<ul class="sidebar-nav">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="research.html">Research</a></li>
+		<li><a href="publications.html">Publications</a></li>
+		<li><a href="talks.html">Talks</a></li>
+		<li><a href="teaching.html" class="active">Teaching</a></li>
+		<li><a href="books.html">Books</a></li>
+		<li><a href="puzzles.html">Puzzles</a></li>
+	</ul>
+
+	<div class="sidebar-contact">
+		<a href="mailto:amitabha.ghosh@gmail.com" title="Email" aria-label="Email"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="15" height="11" rx="1.5"/><path d="M3.5 5.5l6.5 5 6.5-5"/></svg></a>
+		<a href="http://scholar.google.com/citations?user=pGLn8JwAAAAJ&hl=en" target="_blank" title="Google Scholar" aria-label="Google Scholar"><span style="font-weight:700;font-size:11px;">GS</span></a>
+		<a href="https://www.linkedin.com/in/amitabha-ghosh/" target="_blank" title="LinkedIn" aria-label="LinkedIn"><span style="font-weight:700;font-size:11px;">in</span></a>
+	</div>
+</aside>
+
+<main class="main-content">
+<div class="main-inner">
+
+<div class="content reveal" id="teaching">
+	<h2>EE 579: Wireless and Mobile Networks Design and Laboratory</h2>
+	<p>I had the opportunity to teach a graduate level course at USC in the Spring of 2014. Below is the course syllabus, assignments, and lecture notes.</p>
+	<div class="topic-links">
+		<a class="pill-btn" href="teaching/EE579/EE579_Syllabus_Spring2014.pdf">Syllabus</a>
+		<a class="pill-btn" href="teaching/EE579/EE579_Diagnostic_Exam_Spring2014.pdf">Diagnostic Exam</a>
+		<a class="pill-btn" href="teaching/EE579/Android_Assignment_1.pdf">Assignment 1</a>
+		<a class="pill-btn" href="teaching/EE579/Contiki_Assignment_2.pdf">Assignment 2</a>
+		<a class="pill-btn" href="teaching/EE579/EE579_Final_Project_Spring2014.pdf">Project Topics</a>
+	</div>
+	<h3 style="margin-top:1.6em;">Lectures</h3>
+	<ul>
+		<li>Lecture 1: Course Overview (<a href="teaching/EE579/EE579_Lecture1_Spring2014">slides</a>)
+		<li>Lecture 2: Previous Year Projects (<a href="teaching/EE579/EE579_Lecture2_Spring2014">slides</a>)
+		<li>Lecture 3: Android Architecture Overview and Internals (<a href="teaching/EE579/EE579_Lecture3_Spring2014">slides 1</a>, <a href="teaching/EE579/EE579_Android_Spring2014.pdf">slides 2</a>)
+		<li>Lecture 4: Video Transmission over Wireless (<a href="teaching/EE579/EE579_Lecture4_Spring2014">slides</a>)
+		<li>Lecture 5: Wireless Links and Localization in Sensor Networks (<a href="teaching/EE579/EE579_Lecture5_Spring2014">slides</a>)
+		<li>Lecture 6: Sensor Networks, Contiki OS, and Hands-on with Tmote Sky (<a href="teaching/EE579/EE579_Lecture6_Spring2014">slides</a>)
+		<li>Lecture 7: Contiki Internals (<a href="teaching/EE579/EE579_Lecture7_Spring2014">slides</a>)
+		<li>Lecture 8: Medium Access Control Protocols and Data Aggregation in Sensor Networks (<a href="teaching/EE579/EE579_Lecture8_Spring2014">slides</a>)
+		<li>Lecture 9: Topology Control in Sensor Networks (<a href="teaching/EE579/EE579_Lecture9_Spring2014">slides</a>)
+		<li>Lecture 10: Data Center Networks and Puzzles (<a href="teaching/EE579/EE579_Lecture10_Spring2014">slides</a>)
+		<li>Lecture 11: Recap (<a href="teaching/EE579/EE579_Lecture11_Spring2014">slides</a>)
+	</ul>
+</div>
+
+<div class="dot-divider"><span class="dot orange"></span><span class="dot blue"></span></div>
+
+<div class="content reveal" id="iridescent" style="margin-top:2em;">
+	<h2>Iridescent</h2>
+	<p>Part of the broader vision of my research group (ANRG) at USC is to help create a better educated society. We aim to mentor and extend the power of knowledge to a diverse set of students at K-12 schools as well at teaching-oriented undergraduate institutions, to enable them to discover and explore the rewarding world of engineering and research, and expand their horizons in terms of further education and career opportunities in science and technology.</p>
+	<p>During my stay at USC, I collaborated with a nonprofit organization called <a href="http://iridescentlearning.org/">Iridescent</a> that works on science and engineering education at schools in Los Angeles, Bay Area, and New York. Their philosophy is summarized in the following quote which is deeply consonant with my view as well: "If you want to build a ship, don't drum up the people to gather wood, divide the work and give orders. Instead, teach them to yearn for the vast and endless sea." &mdash; Antoine De Saint-Exupery.</p>
+	<p>As part of the "Engineers as Teachers" fellowship program, I had volunteered to teach for two semesters in the Garfield High School in Los Angeles. My students came from the under-privileged society having learning disabilities. I taught them a basic course on electromagnetism and wireless sensors. Following are some of the course materials I had designed and used in class. Some more information on these outreach activities is available <a href="http://anrg.usc.edu/www/index.php/Outreach">here</a>.</p>
+	<div class="topic-links">
+		<a class="pill-btn" href="teaching/Lesson Plan 1.pdf">Lesson 1: Electromagnetism</a>
+		<a class="pill-btn" href="teaching/Lesson Plan 1 - Slides.pdf">Slides</a>
+		<a class="pill-btn" href="teaching/Lesson Plan 2.pdf">Lesson 2: Wireless Transmitters</a>
+		<a class="pill-btn" href="teaching/Lesson Plan 2 - Slides.pdf">Slides</a>
+		<a class="pill-btn" href="teaching/Lesson Plan 3.pdf">Lesson 3: Modulation and Crystal Radios</a>
+		<a class="pill-btn" href="teaching/Lesson Plan 3 - Slides.pdf">Slides</a>
+		<a class="pill-btn" href="teaching/Lesson Plan 4.pdf">Lesson 4: Cellular and Sensor Networks</a>
+		<a class="pill-btn" href="teaching/Lesson Plan 4 - Slides.pdf">Slides</a>
+	</div>
+</div>
+
+<footer class="site-footer">
+	&copy; 2026 Amitabha Ghosh
+</footer>
+
+</div>
+</main>
+
+<script>
+(function () {
+	var els = document.querySelectorAll('.reveal');
+	if ('IntersectionObserver' in window) {
+		var obs = new IntersectionObserver(function (entries) {
+			entries.forEach(function (entry) {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('in-view');
+					obs.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.1 });
+		els.forEach(function (el) { obs.observe(el); });
+	} else {
+		els.forEach(function (el) { el.classList.add('in-view'); });
+	}
+})();
+</script>
+
+</body>
+</html>

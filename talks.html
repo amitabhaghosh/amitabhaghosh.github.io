@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amitabha Ghosh — Talks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="agstyle.css?v=3">
+</head>
+<body>
+
+<div class="mobile-topbar">
+	<span class="name">Amitabha Ghosh</span>
+	<button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.sidebar').classList.toggle('open');document.querySelector('.sidebar-backdrop').classList.toggle('open');">
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
+	</button>
+</div>
+<div class="sidebar-backdrop" onclick="document.querySelector('.sidebar').classList.remove('open');this.classList.remove('open');"></div>
+
+<aside class="sidebar">
+	<div class="sidebar-photo">
+		<img src="images/capecod_profile.jpeg" alt="Amitabha Ghosh">
+	</div>
+	<h1>Amitabha Ghosh</h1>
+	<p class="credentials">Ph.D. USC, Postdoc Princeton</p>
+	<p class="role">Proactive Intelligence<br><span class="company"><a href="https://www.apple.com" target="_blank">Apple Inc.</a></span></p>
+
+	<ul class="sidebar-nav">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="research.html">Research</a></li>
+		<li><a href="publications.html">Publications</a></li>
+		<li><a href="talks.html" class="active">Talks</a></li>
+		<li><a href="teaching.html">Teaching</a></li>
+		<li><a href="books.html">Books</a></li>
+		<li><a href="puzzles.html">Puzzles</a></li>
+	</ul>
+
+	<div class="sidebar-contact">
+		<a href="mailto:amitabha.ghosh@gmail.com" title="Email" aria-label="Email"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="15" height="11" rx="1.5"/><path d="M3.5 5.5l6.5 5 6.5-5"/></svg></a>
+		<a href="http://scholar.google.com/citations?user=pGLn8JwAAAAJ&hl=en" target="_blank" title="Google Scholar" aria-label="Google Scholar"><span style="font-weight:700;font-size:11px;">GS</span></a>
+		<a href="https://www.linkedin.com/in/amitabha-ghosh/" target="_blank" title="LinkedIn" aria-label="LinkedIn"><span style="font-weight:700;font-size:11px;">in</span></a>
+	</div>
+</aside>
+
+<main class="main-content">
+<div class="main-inner">
+
+<div class="entry-category reveal" id="talks">
+	<h2>Invited Talks</h2>
+
+	<div class="entry">
+		<a class="entry-title" href="slides/Caltech-Slides-2013.pdf">Scalable Multi-Class Traffic Management in Data Center Backbone Networks</a>
+		<p class="entry-venue"><a href="http://www.caltech.edu/content/rsrg-seminar-4">Rigorous Systems Research Group (RSRG) Seminar</a>, Caltech, October 17, 2013. Hosted by <a href="http://ee2.caltech.edu/people/faculty/low-s.html">Prof. Steven Low</a>.</p>
+		<div class="entry-actions"><a class="pill-btn" href="slides/Caltech-Slides-2013.pdf">Slides</a></div>
+	</div>
+
+	<div class="entry">
+		<a class="entry-title" href="slides/NECLabs-Slides-2012.pdf">From Theory to Practice in Wireless Multimedia Delivery</a>
+		<p class="entry-venue"><a href="http://www.nec-labs.com/research/broadband/broadband_mobile-website/staff.php">Mobile Communications and Networking Department Seminar</a>, NEC Laboratories America, April 26, 2012. Hosted by <a href="http://www.nec-labs.com/sampath-rangarajan">Dr. Sampath Rangarajan</a>.</p>
+		<div class="entry-actions"><a class="pill-btn" href="slides/NECLabs-Slides-2012.pdf">Slides</a></div>
+	</div>
+
+	<div class="entry">
+		<a class="entry-title" href="slides/Rutgers-Slides-2011.pdf">Modeling Wi-Fi Traffic in Hot-Spots and Video over Wireless (QAVA demo)</a>
+		<p class="entry-venue"><a href="http://lists.winlab.rutgers.edu/pipermail/seminar/2011-September/000215.html">WINLAB Seminar</a>, Rutgers University, October 4, 2011. Hosted by <a href="http://www.ece.rutgers.edu/faculty/raychaudhuri">Prof. Dipankar Raychaudhuri</a>.</p>
+		<div class="entry-actions"><a class="pill-btn" href="slides/Rutgers-Slides-2011.pdf">Slides</a></div>
+	</div>
+
+	<div class="entry">
+		<a class="entry-title" href="slides/UCSD-Slides-2011.pdf">Modeling and Characterization of Large-Scale Wi-Fi Traffic in Public Hot-Spots</a>
+		<p class="entry-venue"><a href="http://ece.ucsd.edu/?q=events&dept=ece&id=1536#top">ECE Seminar</a>, University of California, San Diego, May 9, 2011. Hosted by <a href="http://fleece.ucsd.edu/~tjavidi/">Prof. Tara Javidi</a>.</p>
+		<div class="entry-actions"><a class="pill-btn" href="slides/UCSD-Slides-2011.pdf">Slides</a></div>
+	</div>
+
+	<div class="entry">
+		<a class="entry-title" href="slides/IBMResearch-Slides-2009.pdf">Quality-of-Experience Characterization for Video-on-Demand Services in 4G WiMAX Networks</a>
+		<p class="entry-venue">IBM Research - India, August 2009. Hosted by <a href="http://researcher.watson.ibm.com/researcher/view.php?person=in-shivkumar-k">Prof. Shivkumar Kalyanaraman</a>.</p>
+		<div class="entry-actions"><a class="pill-btn" href="slides/IBMResearch-Slides-2009.pdf">Slides</a></div>
+	</div>
+
+	<div class="entry">
+		<a class="entry-title" href="slides/GMResearch-Slides-2009.pdf">Throughput-Delay Tradeoff for Aggregated Convergecast in Large-Scale Sensor Networks</a>
+		<p class="entry-venue">General Motors Research - India, July 2009. Hosted by <a href="http://www.niituniversity.in/faculty/regular-faculty/dr-rajeev-shorey/">Dr. Rajeev Shorey</a>.</p>
+		<div class="entry-actions"><a class="pill-btn" href="slides/GMResearch-Slides-2009.pdf">Slides</a></div>
+	</div>
+
+	<div class="entry">
+		<a class="entry-title" href="slides/SUNYSB-Slides-2008.pdf">Topology Control in 3-Dimensional Networks and Algorithms for Multi-Channel Aggregate Convergecast in Sensor Networks</a>
+		<p class="entry-venue">WINGS Lab Seminar, SUNY Stony Brook University, October 2008. Hosted by <a href="http://www.cs.sunysb.edu/~samir/">Prof. Samir Das</a>.</p>
+		<div class="entry-actions"><a class="pill-btn" href="slides/SUNYSB-Slides-2008.pdf">Slides</a></div>
+	</div>
+
+	<div class="entry">
+		<a class="entry-title" href="slides/VirginiaTech-Slides-2008.pdf">Algorithms for Multi-Channel Aggregated Convergecast in Sensor Networks</a>
+		<p class="entry-venue">Networks Dynamics and Simulated Sciences Laboratory Seminar, Virginia Tech, October 2008. Hosted by <a href="http://ndssl.vbi.vt.edu/people/akumar.php">Prof. Anil Vullikanti</a>.</p>
+		<div class="entry-actions"><a class="pill-btn" href="slides/VirginiaTech-Slides-2008.pdf">Slides</a></div>
+	</div>
+
+</div>
+
+<footer class="site-footer">
+	&copy; 2026 Amitabha Ghosh
+</footer>
+
+</div>
+</main>
+
+<script>
+(function () {
+	var els = document.querySelectorAll('.reveal');
+	if ('IntersectionObserver' in window) {
+		var obs = new IntersectionObserver(function (entries) {
+			entries.forEach(function (entry) {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('in-view');
+					obs.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.1 });
+		els.forEach(function (el) { obs.observe(el); });
+	} else {
+		els.forEach(function (el) { el.classList.add('in-view'); });
+	}
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amitabha Ghosh — Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="agstyle.css?v=3">
+</head>
+<body>
+
+<div class="mobile-topbar">
+	<span class="name">Amitabha Ghosh</span>
+	<button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.sidebar').classList.toggle('open');document.querySelector('.sidebar-backdrop').classList.toggle('open');">
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
+	</button>
+</div>
+<div class="sidebar-backdrop" onclick="document.querySelector('.sidebar').classList.remove('open');this.classList.remove('open');"></div>
+
+<aside class="sidebar">
+	<div class="sidebar-photo">
+		<img src="images/capecod_profile.jpeg" alt="Amitabha Ghosh">
+	</div>
+	<h1>Amitabha Ghosh</h1>
+	<p class="credentials">Ph.D. USC, Postdoc Princeton</p>
+	<p class="role">Proactive Intelligence<br><span class="company"><a href="https://www.apple.com" target="_blank">Apple Inc.</a></span></p>
+
+	<ul class="sidebar-nav">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="research.html" class="active">Research</a></li>
+		<li><a href="publications.html">Publications</a></li>
+		<li><a href="talks.html">Talks</a></li>
+		<li><a href="teaching.html">Teaching</a></li>
+		<li><a href="books.html">Books</a></li>
+		<li><a href="puzzles.html">Puzzles</a></li>
+	</ul>
+
+	<div class="sidebar-contact">
+		<a href="mailto:amitabha.ghosh@gmail.com" title="Email" aria-label="Email"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="15" height="11" rx="1.5"/><path d="M3.5 5.5l6.5 5 6.5-5"/></svg></a>
+		<a href="http://scholar.google.com/citations?user=pGLn8JwAAAAJ&hl=en" target="_blank" title="Google Scholar" aria-label="Google Scholar"><span style="font-weight:700;font-size:11px;">GS</span></a>
+		<a href="https://www.linkedin.com/in/amitabha-ghosh/" target="_blank" title="LinkedIn" aria-label="LinkedIn"><span style="font-weight:700;font-size:11px;">in</span></a>
+	</div>
+</aside>
+
+<main class="main-content">
+<div class="main-inner">
+
+<div id="research">
+
+	<section class="topic-panel reveal" id="can">
+		<div class="topic-media">
+			<img src="images/content_aware_networking.jpg" alt="Video Delivery in Cellular Networks">
+			<div class="topic-links">
+				<span class="topic-links-label">Related publications</span>
+				<a class="pill-btn" data-tooltip="Content Aware Optimization for Video Delivery over WCDMA — EURASIP Journal on Wireless Communications and Networking, 2012" href="http://anrg.usc.edu/~amitabhag/papers/EURASIP-2012.pdf">EURASIP 2012</a>
+				<a class="pill-btn" data-tooltip="Exploiting Scalable Video Coding for Content Aware Downlink Video Delivery over LTE — ICDCN 2014" href="http://anrg.usc.edu/~amitabhag/papers/ICDCN-2014.pdf">ICDCN 2014</a>
+				<a class="pill-btn" data-tooltip="Content and Buffer Aware Scheduling for Video Delivery over LTE — ACM CoNEXT Student Workshop, 2013" href="http://anrg.usc.edu/~amitabhag/papers/CoNEXT-SW-2013.pdf">CoNEXT Workshop 2013</a>
+			</div>
+		</div>
+		<div class="topic-text">
+			<h2>Video Delivery in Cellular Networks</h2>
+			<p class="topic-lead">How can cellular networks use what's <em>inside</em> a video stream — not just treat it as generic bits — to deliver better quality under constrained bandwidth?</p>
+			<p>As the Internet becomes increasingly popular for sharing multimedia content, we observe a widening gap between how content is produced/distributed and how it is transported over the network. Content-providers assume that the communication pipes are dumb, whereas pipe-providers assume that all bits are equal, thus creating a <strong>content-pipe divide</strong>.</p>
+			<p><strong>Content-aware networking</strong> refers to the methodology of utilizing the rate-distortion (RD) characteristics of the content to design more adaptive and efficient network protocols. In this work, we consider cellular networks (WCDMA and LTE) and develop techniques to exploit content characteristics (e.g., video encoding, frame type, GOP structure) for allocating resources based on the <strong>importance of video packets</strong>. Our techniques are validated by real-world measurement data from ATT and TMobile networks, and by testbed experiments on reconfigurable <em>software defined radios</em> (WARP boards).</p>
+		</div>
+	</section>
+
+	<div class="dot-divider"><span class="dot orange"></span><span class="dot blue"></span></div>
+
+	<section class="topic-panel reverse reveal" id="QAVA">
+		<div class="topic-media">
+			<img src="images/QAVA.jpg" alt="QAVA: Quota Aware Video Adaptation">
+			<div class="topic-links">
+				<span class="topic-links-label">Related publications</span>
+				<a class="pill-btn" data-tooltip="QAVA: Quota Aware Video Adaptation — ACM CoNEXT, 2012" href="http://anrg.usc.edu/~amitabhag/papers/CoNEXT-2012.pdf">CoNEXT 2012</a>
+				<a class="pill-btn" data-tooltip="Mechanisms for Quota-Aware Video Adaptation — in Smart Data Pricing, John Wiley, 2014" href="http://anrg.usc.edu/~amitabhag/papers/BookChapter-QAVA-2013.pdf">Wiley Book Chapter 2013</a>
+				<a class="pill-btn" data-tooltip="Video demo: QAVA in action, adapting video quality to a data quota" href="http://www.youtube.com/watch?v=NDnWg7ydh7k">Video</a>
+				<a class="pill-btn" data-tooltip="Presentation slides from the ACM CoNEXT 2012 talk on QAVA" href="slides/CoNEXT-QAVA-Slides-2012.pdf">Slides</a>
+				<a class="pill-btn" data-tooltip="QAVA project page, Princeton EDGE Lab" href="http://scenic.princeton.edu/pe-quota.php">Link</a>
+			</div>
+		</div>
+		<div class="topic-text">
+			<h2>QAVA: Quota Aware Video Adaptation</h2>
+			<p class="topic-lead">How can a video app keep users happy without blowing through their monthly data quota?</p>
+			<p>Video traffic — Netflix, YouTube, Hulu, and embedded webpage video — is surging on both wireline and wireless Internet, just as ISPs like ATT Mobility and Verizon Wireless began capping unlimited data plans and charging per GB beyond a baseline quota. These two trends are at odds: video consumes more data than ever, while usage-based pricing punishes exactly that.</p>
+			<p>We built <strong>QAVA</strong>, a Quota Aware Video Adaptation solution that leverages the <em>compressibility of video</em> and profiles a consumer's usage behavior over a billing cycle. QAVA lets a consumer <strong>watch more video under a target monthly budget</strong> while maintaining a target video quality — or save money with minimal impact on quality.</p>
+		</div>
+	</section>
+
+	<div class="dot-divider"><span class="dot blue"></span><span class="dot orange"></span></div>
+
+	<section class="topic-panel reveal" id="dctm">
+		<div class="topic-media">
+			<img src="images/dctm.jpg" alt="Traffic Management in Data Center Networks">
+			<div class="topic-links">
+				<span class="topic-links-label">Related publications</span>
+				<a class="pill-btn" data-tooltip="Scalable Multi-Class Traffic Management in Data Center Backbone Networks — IEEE JSAC, 2013" href="http://anrg.usc.edu/~amitabhag/papers/JSAC-2013.pdf">JSAC 2013</a>
+				<a class="pill-btn" data-tooltip="Presentation slides from a Caltech seminar on data center traffic management" href="http://anrg.usc.edu/~amitabhag/slides/Caltech-Slides-2013.pdf">Slides</a>
+			</div>
+		</div>
+		<div class="topic-text">
+			<h2>Traffic Management in Data Center Networks</h2>
+			<p class="topic-lead">How should a data center's backbone jointly control rate, routing, and scheduling at the scale of a company like Google?</p>
+			<p>Large online service providers (OSPs) — Google, Yahoo!, Microsoft — build private backbone networks to interconnect data centers across geographies, carrying multiple classes of traffic with diverse performance objectives. Unlike a traditional ISP, an <strong>OSP controls both the hosts and the routers</strong>, offering the flexibility to jointly optimize rate control, backbone routing, and link scheduling.</p>
+			<p>Motivated by centralized traffic engineering approaches like Google's B4 software-defined WAN, we present two <strong>semi-centralized architectures</strong> that scale by distributing computation across multiple tiers using a few management controllers. Using optimization decomposition, we show both designs are <em>provably optimal</em>, with a tradeoff between convergence rate and message passing.</p>
+		</div>
+	</section>
+
+	<div class="dot-divider"><span class="dot orange"></span><span class="dot blue"></span></div>
+
+	<section class="topic-panel reverse reveal" id="satcom">
+		<div class="topic-media"><img src="images/satcom.jpg" alt="IP-Routing and Transport in Satellite Networks"></div>
+		<div class="topic-text">
+			<h2>IP-Routing and Transport in Satellite Networks</h2>
+			<p class="topic-lead">How do you route data efficiently across satellites in different orbits without leaning on ground stations for every hop?</p>
+			<p>Efficient routing strategies combined with robust transport protocols are paramount in new-generation satellite networks spanning diverse constellations at different orbits. Compared to older bent-pipe satellite systems with no onboard IP-routing, newer generations offer a lot more flexibility — but require investigating <strong>cross-layer approaches</strong> for heterogeneous GEO + LEO satellite networks.</p>
+			<p>We propose <strong>JTRO-ASN</strong>, a joint transport and IP-routing optimization framework for adaptive satellite networks. It establishes end-to-end routes in space using inter-satellite and inter-level SATCOM links, with <em>reduced ground station dependencies</em>, decreased end-to-end latencies, and support for traffic prioritization across multiple available routes.</p>
+			<div class="topic-links"></div>
+		</div>
+	</section>
+
+	<div class="dot-divider"><span class="dot blue"></span><span class="dot orange"></span></div>
+
+	<section class="topic-panel reveal" id="wifi">
+		<div class="topic-media">
+			<img src="images/wifi.jpg" alt="Wi-Fi Traffic Modeling in Public Hot-Spots">
+			<div class="topic-links">
+				<span class="topic-links-label">Related publications</span>
+				<a class="pill-btn" data-tooltip="Modeling and Characterization of Large-Scale Wi-Fi Traffic in Public Hot-Spots — IEEE INFOCOM, 2011" href="http://anrg.usc.edu/~amitabhag/papers/Infocom-2011.pdf">INFOCOM 2011</a>
+				<a class="pill-btn" data-tooltip="Presentation slides from an AT&amp;T Labs talk on Wi-Fi hot-spot traffic modeling" href="http://anrg.usc.edu/~amitabhag/slides/ATT-Slides-2011.pdf">Slides</a>
+			</div>
+		</div>
+		<div class="topic-text">
+			<h2>Wi-Fi Traffic Modeling in Public Hot-Spots</h2>
+			<p class="topic-lead">What does a coffee shop's Wi-Fi traffic actually look like — and can it be modeled well enough to plan capacity?</p>
+			<p>The ubiquitous deployment of wireless hot-spots — coffee shops, book stores, malls, hotels — has drawn millions of users onto smaller coverage footprints at considerably higher bandwidth. Prior "workload characterization" studies were mostly limited to laboratory conditions or short-term monitoring at conferences, leaving public, unregulated hot-spots poorly understood.</p>
+			<p>We developed a common modeling framework to characterize <strong>customer arrival patterns</strong>, connection durations, and the number of simultaneously present users. We combine statistical clustering with Poisson regression to fit a non-stationary Poisson process to arrivals, and model the <em>heavy-tailed distribution</em> of connection durations via a Phase Type distribution — validated on real AT&amp;T hot-spot data from New York City and San Francisco.</p>
+		</div>
+	</section>
+
+	<div class="dot-divider"><span class="dot orange"></span><span class="dot blue"></span></div>
+
+	<section class="topic-panel reverse reveal" id="wsn">
+		<div class="topic-media">
+			<img src="images/wsn.jpg" alt="Fast Data Collection in Sensor Networks">
+			<div class="topic-links">
+				<span class="topic-links-label">Related publications</span>
+				<a class="pill-btn" data-tooltip="Multi-Channel Scheduling and Spanning Trees: Throughput-Delay Trade-off for Fast Data Collection in Sensor Networks — IEEE/ACM ToN, 2011" href="http://anrg.usc.edu/~amitabhag/papers/TON-Dec2011.pdf">TON 2011</a>
+				<a class="pill-btn" data-tooltip="Fast Data Collection in Tree-Based Wireless Sensor Networks — IEEE Trans. Mobile Computing, 2012" href="http://anrg.usc.edu/~amitabhag/papers/TMC-Jan2012.pdf">TMC 2012</a>
+				<a class="pill-btn" data-tooltip="Multi-Channel Scheduling Algorithms for Fast Aggregated Convergecast in Sensor Networks — IEEE MASS, 2009" href="http://anrg.usc.edu/~amitabhag/papers/MASS-2009.pdf">MASS 2009</a>
+				<a class="pill-btn" data-tooltip="Scheduling Algorithms for Tree-Based Data Collection in Wireless Sensor Networks — in Theoretical Aspects of Distributed Computing in Sensor Networks, Springer, 2011" href="http://anrg.usc.edu/~amitabhag/papers/BookChapter-Scheduling-2011">Springer Book Chapter 2011</a>
+				<a class="pill-btn" data-tooltip="Ph.D. Defense presentation slides on fast data collection in sensor networks" href="http://anrg.usc.edu/~amitabhag/slides/Data-Collection-Defense-Slides-2010.pdf">Slides</a>
+			</div>
+		</div>
+		<div class="topic-text">
+			<h2>Fast Data Collection in Sensor Networks</h2>
+			<p class="topic-lead">How fast can a sensor network gather data from every node without collisions or wasted energy?</p>
+			<p>Fast and periodic collection of aggregated data is of considerable interest for mission-critical and continuous monitoring applications — target tracking, structural health monitoring, health care — that demand efficient, timely collection of large data volumes despite low sensor-radio bandwidth, wireless contention, and limited power.</p>
+			<p>We designed efficient algorithms for <strong>scheduling</strong> across multiple orthogonal frequency channels, <strong>transmission power control</strong>, and constructing optimal routing topologies for what we call "convergecast." We demonstrate the <em>throughput-delay trade-offs</em> inherent to this process, and prove several worst-case performance bounds using graph theoretic tools.</p>
+		</div>
+	</section>
+
+	<div class="dot-divider"><span class="dot blue"></span><span class="dot orange"></span></div>
+
+	<section class="topic-panel reveal" id="wsnappl">
+		<div class="topic-media">
+			<img src="images/wsn_applications.jpg" alt="Applications of Sensor Networks">
+			<div class="topic-links">
+				<span class="topic-links-label">Related publications</span>
+				<a class="pill-btn" data-tooltip="Energy-Efficient Deployment Strategies in Structural Health Monitoring using Wireless Sensor Networks — J. Structural Control and Health Monitoring, 2012" href="http://anrg.usc.edu/~amitabhag/papers/SCHM-2013.pdf">SCHM 2012</a>
+				<a class="pill-btn" data-tooltip="Intelligent Parking Lot Application Using Wireless Sensor Networks — CTS, 2008" href="http://anrg.usc.edu/~amitabhag/papers/CTS-2008.pdf">CTS 2008</a>
+			</div>
+		</div>
+		<div class="topic-text">
+			<h2>Applications of Sensor Networks</h2>
+			<p class="topic-lead">Can inexpensive sensors reliably monitor a bridge's health or guide drivers to an open parking spot?</p>
+			<p>Wireless sensor networks have inspired tremendous research interest across smart homes, marine life monitoring, security-surveillance, healthcare, and automotive applications. We focus on two: <strong>structural health monitoring (SHM)</strong> and an <strong>intelligent parking lot guidance system</strong>.</p>
+			<p>For SHM, we design an optimal sensor placement strategy using mode shape analysis and an energy-efficient routing scheme, balancing estimation accuracy against the cost of data collection — motivated by real bridge-collapse catastrophes underscoring the need for reliable monitoring. For parking, we show that a combination of <em>magnetic and ultrasound sensors</em> can accurately detect vehicles, validated through a car-counting experiment in a multi-storied university parking structure lasting over a day.</p>
+		</div>
+	</section>
+
+	<div class="dot-divider"><span class="dot orange"></span><span class="dot blue"></span></div>
+
+	<section class="topic-panel reverse reveal" id="cgm">
+		<div class="topic-media">
+			<img src="images/coverage_connectivity_topologycontrol.jpg" alt="Computational Geometry Methods">
+			<div class="topic-links">
+				<span class="topic-links-label">Related publications</span>
+				<a class="pill-btn" data-tooltip="Coverage Connectivity Issues in Wireless Sensor Networks: A Survey — Elsevier Pervasive and Mobile Computing, 2008" href="http://anrg.usc.edu/~amitabhag/papers/PMC-Feb2008.pdf">Elsevier PMC 2008</a>
+				<a class="pill-btn" data-tooltip="Coverage and Connectivity Issues in Wireless Sensor Networks — in Mobile, Wireless and Sensor Networks, John Wiley &amp; Sons, 2006" href="http://anrg.usc.edu/~amitabhag/papers/BookChapter-CoverageConnectivity-2006.pdf">John Wiley Book Chapter 2006</a>
+				<a class="pill-btn" data-tooltip="Estimating Coverage Holes and Enhancing Coverage in Mixed Sensor Networks — IEEE LCN, 2004" href="http://anrg.usc.edu/~amitabhag/papers/LCN-2004.pdf">LCN 2004</a>
+				<a class="pill-btn" data-tooltip="Efficient Distributed Topology Control in 3-Dimensional Wireless Networks — IEEE SECON, 2007" href="http://anrg.usc.edu/~amitabhag/papers/SECON-2007.pdf">SECON 2007</a>
+			</div>
+		</div>
+		<div class="topic-text">
+			<h2>Computational Geometry Methods</h2>
+			<p class="topic-lead">How do you guarantee a sensor network stays connected — even in three dimensions — using as little transmit power as possible?</p>
+			<p>Effective network coverage, connectivity, and topology control are fundamental to any sensor network. Coverage-connectivity means deploying an optimal number of sensors at strategic locations so the network stays connected and can route data to a sink; topology control means adjusting transmit power to reduce interference. Existing 2-D techniques don't work in 3-D, due to the lack of directional node ordering and higher algorithmic complexity.</p>
+			<p>We use computational geometry tools — <strong>Voronoi diagrams</strong>, orthographic projections, and spherical Delaunay triangulation — for effective coverage, connectivity, and distributed topology control, including one of the first approaches to <em>opportunistically deploy both static and mobile nodes</em> in a hybrid sensor network.</p>
+		</div>
+	</section>
+
+
+</div>
+
+<footer class="site-footer">
+	&copy; 2026 Amitabha Ghosh
+</footer>
+
+</div>
+</main>
+
+<script>
+(function () {
+	var els = document.querySelectorAll('.reveal');
+	if ('IntersectionObserver' in window) {
+		var obs = new IntersectionObserver(function (entries) {
+			entries.forEach(function (entry) {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('in-view');
+					obs.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.1 });
+		els.forEach(function (el) { obs.observe(el); });
+	} else {
+		els.forEach(function (el) { el.classList.add('in-view'); });
+	}
+})();
+</script>
+
+</body>
+</html>
