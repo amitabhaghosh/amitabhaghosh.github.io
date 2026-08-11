@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&family=Poppins:wght@600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="agstyle.css?v=14">
+<link rel="stylesheet" href="agstyle.css?v=17">
 </head>
 <body>
 
@@ -56,8 +56,15 @@
 <div id="research">
 
 	<section class="topic-panel reveal" id="can">
-		<div class="topic-media">
-			<img src="images/content_aware_networking.jpg" alt="Video Delivery in Cellular Networks">
+		<div class="topic-text">
+			<h2>Video Delivery in Cellular Networks</h2>
+			<p class="topic-lead">How can cellular networks utilize what's <em>inside</em> a video stream &mdash; not just treat it as generic bits &mdash; to deliver better quality under constrained network resources, such as limited bandwidth?</p>
+			<p>As the Internet becomes increasingly popular for sharing multimedia content, we observe a widening gap between how content is produced and distributed vs. how it is transported over the network. Content-providers assume that the communication pipes are dumb, whereas pipe-providers assume that all bits are equal, thus creating a <strong>content-pipe divide</strong>.</p>
+			<p><strong>Content-aware networking</strong> refers to the methodology of utilizing the content's rate-distortion characteristics (e.g., video encoding, frame type, group-of-pictures or GOP structure) to design adaptive and efficient network protocols.</p>
+			<object class="topic-pdf" data="images/research_video_delivery.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" aria-label="Video Delivery in Cellular Networks (PDF)">
+				<a href="images/research_video_delivery.pdf">View the Video Delivery in Cellular Networks diagram (PDF)</a>
+			</object>
+			<p>In this work, we develop techniques exploiting such content characteristics to allocate resources in cellular networks based on the <strong>importance of video packets</strong>. We validate our techniques using real-world measurement data from AT&amp;T and T-Mobile networks, and by conducting testbed experiments on reconfigurable, FPGA-based <em>software defined radios</em>, such as <a href="https://warpproject.org/trac" target="_blank">WARP boards</a>.</p>
 			<div class="topic-links">
 				<span class="topic-links-label">Related publications</span>
 				<a class="pill-btn" data-tooltip="Content Aware Optimization for Video Delivery over WCDMA — EURASIP Journal on Wireless Communications and Networking, 2012" href="http://anrg.usc.edu/~amitabhag/papers/EURASIP-2012.pdf">EURASIP 2012</a>
@@ -65,33 +72,27 @@
 				<a class="pill-btn" data-tooltip="Content and Buffer Aware Scheduling for Video Delivery over LTE — ACM CoNEXT Student Workshop, 2013" href="http://anrg.usc.edu/~amitabhag/papers/CoNEXT-SW-2013.pdf">CoNEXT Workshop 2013</a>
 			</div>
 		</div>
-		<div class="topic-text">
-			<h2>Video Delivery in Cellular Networks</h2>
-			<p class="topic-lead">How can cellular networks use what's <em>inside</em> a video stream — not just treat it as generic bits — to deliver better quality under constrained bandwidth?</p>
-			<p>As the Internet becomes increasingly popular for sharing multimedia content, we observe a widening gap between how content is produced/distributed and how it is transported over the network. Content-providers assume that the communication pipes are dumb, whereas pipe-providers assume that all bits are equal, thus creating a <strong>content-pipe divide</strong>.</p>
-			<p><strong>Content-aware networking</strong> refers to the methodology of utilizing the rate-distortion (RD) characteristics of the content to design more adaptive and efficient network protocols. In this work, we consider cellular networks (WCDMA and LTE) and develop techniques to exploit content characteristics (e.g., video encoding, frame type, GOP structure) for allocating resources based on the <strong>importance of video packets</strong>. Our techniques are validated by real-world measurement data from ATT and TMobile networks, and by testbed experiments on reconfigurable <em>software defined radios</em> (WARP boards).</p>
-		</div>
 	</section>
 
 	<div class="dot-divider"><span class="dot orange"></span><span class="dot blue"></span></div>
 
 	<section class="topic-panel reverse reveal" id="QAVA">
-		<div class="topic-media">
-			<img src="images/QAVA.jpg" alt="QAVA: Quota Aware Video Adaptation">
+		<div class="topic-text">
+			<h2>QAVA: Quota Aware Video Adaptation</h2>
+			<p class="topic-lead">How can video streaming applications (e.g., Netflix, YouTube, Hulu) and embedded webpage videos keep users happy without blowing through their monthly data quota?</p>
+			<p>In recent year, video traffic is surging on both wireline and wireless Internet, just as ISPs like AT&amp;T Mobility and Verizon Wireless began capping unlimited data plans and charging per GB beyond a baseline quota. These two trends are at odds: video consumes more data than ever, while usage-based pricing punishes exactly that.</p>
+			<p>Given this conflict, is there a way for users to stay within their monthly data plans (quotas) without suffering a noticeable degradation in video quality?</p>
+			<object class="topic-pdf" data="images/research_qava.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" aria-label="QAVA: Quota Aware Video Adaptation (PDF)">
+				<a href="images/research_qava.pdf">View the QAVA diagram (PDF)</a>
+			</object>
+			<p>In this work, we built an online video adaptation system, <strong>QAVA</strong>, that manages this tradeoff by leveraging the compressibility of videos and predicting consumer usage behavior throughout a billing cycle. The main modules comprise: (a) <strong>Stream Selector</strong>, (b) <strong>User Profiler</strong>, and (c) <strong>Video Profiler</strong>. We designed online algorithms using dynamic programming and evaluated them using real video request traces. Empirical results suggest that QAVA can provide an <em>effective solution</em> to the dilemma of usage-based pricing of heavy video traffic.</p>
 			<div class="topic-links">
 				<span class="topic-links-label">Related publications</span>
 				<a class="pill-btn" data-tooltip="QAVA: Quota Aware Video Adaptation — ACM CoNEXT, 2012" href="http://anrg.usc.edu/~amitabhag/papers/CoNEXT-2012.pdf">CoNEXT 2012</a>
 				<a class="pill-btn" data-tooltip="Mechanisms for Quota-Aware Video Adaptation — in Smart Data Pricing, John Wiley, 2014" href="http://anrg.usc.edu/~amitabhag/papers/BookChapter-QAVA-2013.pdf">Wiley Book Chapter 2013</a>
 				<a class="pill-btn" data-tooltip="Video demo: QAVA in action, adapting video quality to a data quota" href="http://www.youtube.com/watch?v=NDnWg7ydh7k">Video</a>
 				<a class="pill-btn" data-tooltip="Presentation slides from the ACM CoNEXT 2012 talk on QAVA" href="slides/CoNEXT-QAVA-Slides-2012.pdf">Slides</a>
-				<a class="pill-btn" data-tooltip="QAVA project page, Princeton EDGE Lab" href="http://scenic.princeton.edu/pe-quota.php">Link</a>
 			</div>
-		</div>
-		<div class="topic-text">
-			<h2>QAVA: Quota Aware Video Adaptation</h2>
-			<p class="topic-lead">How can a video app keep users happy without blowing through their monthly data quota?</p>
-			<p>Video traffic — Netflix, YouTube, Hulu, and embedded webpage video — is surging on both wireline and wireless Internet, just as ISPs like ATT Mobility and Verizon Wireless began capping unlimited data plans and charging per GB beyond a baseline quota. These two trends are at odds: video consumes more data than ever, while usage-based pricing punishes exactly that.</p>
-			<p>We built <strong>QAVA</strong>, a Quota Aware Video Adaptation solution that leverages the <em>compressibility of video</em> and profiles a consumer's usage behavior over a billing cycle. QAVA lets a consumer <strong>watch more video under a target monthly budget</strong> while maintaining a target video quality — or save money with minimal impact on quality.</p>
 		</div>
 	</section>
 
@@ -208,6 +209,32 @@
 		</div>
 	</section>
 
+
+	<div class="content reveal">
+	<h2>
+		Professional Activities
+	</h2>
+	<ul id="professional-activities">
+		<li>Apple Tutor, <a href="http://www.edline.net/pages/Nimitz_Elementary_School" target="_blank">Nimitz Elementary School</a>, Sunnyvale, CA, Nov 2014 -- present.
+		<li>Reviewer of proposals on wireless  networks for the Army Research Office (ARO), 2014.
+		<li>NSF Panelist on proposals pertaining to wireless sensor networks, 2013.
+
+		<li>TPC Member <a href="http://www.ieee-pimrc.org" target="_blank">IEEE International Symposium on Personal, Indoor, and Mobile Radio Communications (PIMRC) 2014</a>.
+
+		<li>TPC Member <a href="http://icdcn2012.comp.polyu.edu.hk" target="_blank">International Conference on Distributed Computing and Networking (ICDCN) 2012</a>, <a href="http://www.icdcn.org/">2014</a>.
+
+		<li>TPC Member <a href="http://staff.vbi.vt.edu/maleq/wasa2010/index.html" target="_blank">Wireless Algorithms, Systems, and Applications (WASA) 2010</a>, <a href="http://www.ece.iit.edu/~wasa2011/" target="_blank">2011</a>, <a href="http://wasa2012.bjtu.edu.cn/" target="_blank">2012</a>.
+
+		<li>TPC Member <a
+href="http://www.icccn.org/icccn11/tracks/WAHN.html" target="_blank">International Conference on Computer Communication Networks (ICCCN) 2011</a>, <a href="http://www.icccn.org/icccn12/tracks/LAMN.html" target="_blank">2012</a>, <a href="http://www.icccn.org/icccn13/tracks/LAMN.html" target="_blank">2013</a>, <a href="http://www.icccn.org/icccn14/WAM.html" target="_blank">2014</a>.
+
+		<li>TPC Member <a href="http://www.issnip.org/2010" target="_blank">Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP) 2010</a>.
+
+		<li>TPC Member <a href="http://www.ieeelcn.org/" target="_blank">IEEE Local Computer Networks (LCN) 2006</a>.
+
+		<li>Former secretary and varsity team member of USC <a href="https://www.facebook.com/uscpingpongposse" target="_blank">Ping Pong Posse</a> (<a href="http://dailytrojan.com/2009/12/03/evolution-of-usc%E2%80%99s-ping-pong-posse-has-been-fast-paced/" target="_blank">Daily TROJAN article</a>), (video: <a href="http://youtube.com/watch?v=cNnibf-zPro" target="_blank">NCTTA Nationals 2008</a>).
+	</ul>
+	</div>
 
 </div>
 
