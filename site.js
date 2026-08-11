@@ -1,6 +1,14 @@
 (function () {
 	var toggle = document.querySelector('.quicknav-toggle');
 	var panel = document.querySelector('.quicknav-panel');
+
+	document.querySelectorAll('.sidebar-nav a.active, .quicknav-panel a.active').forEach(function (link) {
+		link.addEventListener('click', function (event) {
+			event.preventDefault();
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		});
+	});
+
 	if (!toggle || !panel) return;
 
 	var sidebar = document.querySelector('.sidebar');
