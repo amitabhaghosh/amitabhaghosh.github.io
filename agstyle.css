@@ -662,6 +662,14 @@ footer.site-footer a {
   margin: 1em 0;
 }
 
+.topic-pdf-wrap {
+  position: relative;
+}
+
+.topic-pdf-expand {
+  display: none;
+}
+
 .topic-text {
   width: 100%;
   min-width: 0;
@@ -792,6 +800,25 @@ footer.site-footer a {
 @media (max-width: 720px) {
   .topic-panel {
     padding: 1.2em 1.3em;
+  }
+
+  .topic-pdf {
+    pointer-events: none;
+  }
+
+  .topic-pdf-expand {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    inset: 1em 0;
+    padding-bottom: 0.7em;
+    background: linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(26, 29, 35, 0.45));
+    border-radius: var(--radius);
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
   }
 }
 
