@@ -9,7 +9,7 @@
 <link
 href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&family=Poppins:wght@600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap"
 rel="stylesheet">
-<link rel="stylesheet" href="agstyle.css?v=19">
+<link rel="stylesheet" href="agstyle.css?v=21">
 </head>
 <body>
 
@@ -63,9 +63,24 @@ rel="stylesheet">
 
 	<div class="content reveal">
 		<h2>Research Themes</h2>
+		<p>My research spans content-aware networking, data center and satellite traffic engineering, wireless traffic modeling, and algorithmic foundations for
+		sensor networks — summarized below:</p>
+		<ul class="theme-summary-list">
+			<li><strong>Video Delivery in Cellular Networks</strong> — exploiting video content characteristics to allocate cellular resources by packet importance.</li>
+			<li><strong>QAVA: Quota Aware Video Adaptation</strong> — adapting video quality to keep users within a monthly data quota.</li>
+			<li><strong>Traffic Management in Data Center Networks</strong> — semi-centralized architectures for joint rate control, routing, and scheduling.</li>
+			<li><strong>Wi-Fi Traffic Modeling in Public Hot-Spots</strong> — statistical models of customer arrivals, session durations, and occupancy.</li>
+			<li><strong>Fast Data Collection in Sensor Networks</strong> — approximation algorithms for scheduling and routing tree design in convergecast.</li>
+			<li><strong>Applications of Sensor Networks</strong> — structural health monitoring and intelligent parking lot guidance.</li>
+			<li><strong>Computational Geometry Methods</strong> — coverage, connectivity, and topology control for 3-D sensor deployments.</li>
+			<li><strong>IP-Routing and Transport in Satellite Networks</strong> — joint transport and routing optimization for GEO + LEO satellite constellations.</li>
+		</ul>
 	</div>
 
 	<section class="topic-panel reveal" id="can">
+		<button type="button" class="topic-collapse-toggle" aria-expanded="true" aria-label="Collapse section">
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>
+		</button>
 		<div class="topic-text">
 			<h2>Video Delivery in Cellular Networks</h2>
 			<p class="topic-lead">How can cellular networks utilize what's <em>inside</em> a video stream &mdash; not just treat it as generic bits &mdash; to
@@ -101,6 +116,9 @@ rel="stylesheet">
 	<div class="dot-divider"><span class="dot orange"></span><span class="dot blue"></span></div>
 
 	<section class="topic-panel reverse reveal" id="QAVA">
+		<button type="button" class="topic-collapse-toggle" aria-expanded="true" aria-label="Collapse section">
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>
+		</button>
 		<div class="topic-text">
 			<h2>QAVA: Quota Aware Video Adaptation</h2>
 			<p class="topic-lead">How can video streaming applications (e.g., Netflix, YouTube, Hulu) and embedded webpage videos keep users happy without
@@ -138,6 +156,9 @@ rel="stylesheet">
 	<div class="dot-divider"><span class="dot blue"></span><span class="dot orange"></span></div>
 
 	<section class="topic-panel reveal" id="dctm">
+		<button type="button" class="topic-collapse-toggle" aria-expanded="true" aria-label="Collapse section">
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>
+		</button>
 		<div class="topic-text">
 			<h2>Traffic Management in Data Center Networks</h2>
 			<p class="topic-lead">How should large OSPs like Google, Amazon, Microsoft employ traffic engineering to meet the diverse performance requirements of
@@ -171,6 +192,9 @@ rel="stylesheet">
 	<div class="dot-divider"><span class="dot orange"></span><span class="dot blue"></span></div>
 
 	<section class="topic-panel reveal" id="wifi">
+		<button type="button" class="topic-collapse-toggle" aria-expanded="true" aria-label="Collapse section">
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>
+		</button>
 		<div class="topic-text">
 			<h2>Wi-Fi Traffic Modeling in Public Hot-Spots</h2>
 			<p class="topic-lead">What does typical Wi-Fi traffic pattern look like in public hotspots like coffee shots, bookstores, hotels, etc. — and can
@@ -203,8 +227,35 @@ rel="stylesheet">
 	<div class="dot-divider"><span class="dot orange"></span><span class="dot blue"></span></div>
 
 	<section class="topic-panel reverse reveal" id="wsn">
-		<div class="topic-media">
-			<img src="images/wsn.jpg" alt="Fast Data Collection in Sensor Networks">
+		<button type="button" class="topic-collapse-toggle" aria-expanded="true" aria-label="Collapse section">
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>
+		</button>
+		<div class="topic-text">
+			<h2>Fast Data Collection in Sensor Networks (Approximation Algorithms)</h2>
+			<p class="topic-lead">How fast can a sensor network gather data from every node without collisions or wasted energy?</p>
+			<p>Fast and periodic collection of aggregated data is of considerable interest for mission-critical and continuous monitoring applications — target
+			tracking, structural health monitoring, health care — that demand efficient, timely collection of large data volumes despite low sensor-radio
+			bandwidth, wireless contention, and limited power.</p>
+			<p>Two primary factors that affect the data collection rate and timeliness are: (a) efficiency of the <strong>link scheduling</strong> protocol, and (b)
+			topology of the <strong>routing tree</strong>, in terms of its node degrees and radius. The two objectives of <em>maximizing the data collection rate</em>
+			and <em>minimizing the delay</em> are mutually conflicting due to limited network bandwidth, time, and a node's processing power. We ask: Is there a
+			routing topology and a link schedule that can optimize both the objectives with some provable guarantees?</p>
+			<div class="topic-pdf-wrap">
+				<object class="topic-pdf" data="images/research_convergecast.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" aria-label="Fast Data Collection in Sensor Networks (PDF)">
+					<a href="images/research_convergecast.pdf">View the Fast Data Collection in Sensor Networks diagram (PDF)</a>
+				</object>
+				<a class="topic-pdf-expand" href="images/research_convergecast.pdf" target="_blank">Tap to view full size &#8599;</a>
+			</div>
+			<p>In this work, we consider tree-based sensor networks (i.e., where a single sink node collects data from all other nodes) arbitrarily deployed in 2D
+			in which nodes can utilize multiple orthogonal frequency channels to transmit data. We assume a TDMA schedule, and that simultaneous transmissions on
+			orthogonal channels are non-interfering.</p>
+			<p>We first show that, given a connected network of arbitrarily deployed nodes, a limited number of frequencies, and a routing tree, the joint optimization
+			problem of assigning a frequency to each receiver in the tree, and a time slot to each edge that would maximize the aggregated throughput at the sink is
+			<strong>NP-hard</strong> (reduction from Vertex Color).</p>
+			<p>We then design an efficient link schedule that gives a <strong>constant factor approximation</strong> to the optimal throughput for unit disk graphs,
+			and a <strong>logarithmc approximation</strong> to general disk graphs. Thereafter, to minimize the maximum delay given a throughput bound, we also design a constant
+			factor bicriteria approximation algorithm to construct a <strong>Bounded-Degree Minimum-Radius Spanning Tree</strong>. We demonstrate the effectiveness
+			of such algorithms and prove several <em>worst-case performance bounds</em> using graph theoretic tools.</p>
 			<div class="topic-links">
 				<span class="topic-links-label">Related publications</span>
 				<a class="pill-btn" data-tooltip="Multi-Channel Scheduling and Spanning Trees: Throughput-Delay Trade-off for Fast Data Collection in Sensor
@@ -220,21 +271,14 @@ rel="stylesheet">
 				href="http://anrg.usc.edu/~amitabhag/slides/Data-Collection-Defense-Slides-2010.pdf">Slides</a>
 			</div>
 		</div>
-		<div class="topic-text">
-			<h2>Fast Data Collection in Sensor Networks</h2>
-			<p class="topic-lead">How fast can a sensor network gather data from every node without collisions or wasted energy?</p>
-			<p>Fast and periodic collection of aggregated data is of considerable interest for mission-critical and continuous monitoring applications — target
-			tracking, structural health monitoring, health care — that demand efficient, timely collection of large data volumes despite low sensor-radio
-			bandwidth, wireless contention, and limited power.</p>
-			<p>We designed efficient algorithms for <strong>scheduling</strong> across multiple orthogonal frequency channels, <strong>transmission power
-			control</strong>, and constructing optimal routing topologies for what we call "convergecast." We demonstrate the <em>throughput-delay
-			trade-offs</em> inherent to this process, and prove several worst-case performance bounds using graph theoretic tools.</p>
-		</div>
 	</section>
 
 	<div class="dot-divider"><span class="dot blue"></span><span class="dot orange"></span></div>
 
 	<section class="topic-panel reveal" id="wsnappl">
+		<button type="button" class="topic-collapse-toggle" aria-expanded="true" aria-label="Collapse section">
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>
+		</button>
 		<div class="topic-media">
 			<img src="images/wsn_applications.jpg" alt="Applications of Sensor Networks">
 			<div class="topic-links">
@@ -261,6 +305,9 @@ rel="stylesheet">
 	<div class="dot-divider"><span class="dot orange"></span><span class="dot blue"></span></div>
 
 	<section class="topic-panel reverse reveal" id="cgm">
+		<button type="button" class="topic-collapse-toggle" aria-expanded="true" aria-label="Collapse section">
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>
+		</button>
 		<div class="topic-media">
 			<img src="images/coverage_connectivity_topologycontrol.jpg" alt="Computational Geometry Methods">
 			<div class="topic-links">
@@ -291,6 +338,9 @@ rel="stylesheet">
 	<div class="dot-divider"><span class="dot orange"></span><span class="dot blue"></span></div>
 
 	<section class="topic-panel reverse reveal" id="satcom">
+		<button type="button" class="topic-collapse-toggle" aria-expanded="true" aria-label="Collapse section">
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>
+		</button>
 		<div class="topic-media"><img src="images/satcom.jpg" alt="IP-Routing and Transport in Satellite Networks"></div>
 		<div class="topic-text">
 			<h2>IP-Routing and Transport in Satellite Networks</h2>
@@ -368,6 +418,6 @@ target="_blank">2013</a>, <a href="http://www.icccn.org/icccn14/WAM.html" target
 })();
 </script>
 
-<script src="site.js?v=2"></script>
+<script src="site.js?v=3"></script>
 </body>
 </html>

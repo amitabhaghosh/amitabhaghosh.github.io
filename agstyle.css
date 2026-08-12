@@ -629,6 +629,7 @@ footer.site-footer a {
    --------------------------------------------------------------- */
 
 .topic-panel {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 1.4em;
@@ -638,6 +639,54 @@ footer.site-footer a {
   border-radius: var(--radius);
   padding: 1.8em 2em;
   box-shadow: 0 1px 3px rgba(26, 29, 35, 0.04);
+}
+
+.topic-collapse-toggle {
+  position: absolute;
+  top: 1.4em;
+  right: 1.6em;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.topic-collapse-toggle:hover {
+  background: var(--color-accent-blue-soft);
+  border-color: var(--color-accent-blue);
+  color: var(--color-accent-blue);
+}
+
+.topic-collapse-toggle svg {
+  width: 14px;
+  height: 14px;
+  transform: rotate(180deg);
+  transition: transform var(--transition-fast);
+}
+
+.topic-panel.is-collapsed .topic-collapse-toggle svg {
+  transform: rotate(0deg);
+}
+
+.topic-panel .topic-text > h2 {
+  padding-right: 2.6em;
+}
+
+.topic-panel.is-collapsed .topic-media,
+.topic-panel.is-collapsed .topic-text > *:not(h2) {
+  display: none;
+}
+
+.topic-panel.is-collapsed .topic-text > h2 {
+  margin: 0;
 }
 
 .topic-media {
@@ -881,5 +930,22 @@ footer.site-footer a {
 
 .content h2:first-child {
   margin-top: 0;
+}
+
+.theme-summary-list {
+  margin: 1em 0 0;
+  padding-left: 1.3em;
+}
+
+.theme-summary-list li {
+  margin: 0 0 0.55em;
+}
+
+.theme-summary-list li:last-child {
+  margin-bottom: 0;
+}
+
+.theme-summary-list strong {
+  color: var(--color-link-dark);
 }
 

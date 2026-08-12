@@ -9,6 +9,16 @@
 		});
 	});
 
+	document.querySelectorAll('.topic-collapse-toggle').forEach(function (btn) {
+		btn.addEventListener('click', function () {
+			var topicPanel = btn.closest('.topic-panel');
+			if (!topicPanel) return;
+			var collapsed = topicPanel.classList.toggle('is-collapsed');
+			btn.setAttribute('aria-expanded', String(!collapsed));
+			btn.setAttribute('aria-label', collapsed ? 'Expand section' : 'Collapse section');
+		});
+	});
+
 	if (!toggle || !panel) return;
 
 	var sidebar = document.querySelector('.sidebar');
