@@ -10,13 +10,13 @@
 <link
 href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&family=Poppins:wght@600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap"
 rel="stylesheet">
-<link rel="stylesheet" href="agstyle.css?v=22">
+<link rel="stylesheet" href="agstyle.css?v=24">
 </head>
 <body>
 
 <aside class="sidebar">
 	<div class="sidebar-photo">
-		<img src="images/capecod_profile.jpeg" alt="Amitabha Ghosh">
+		<img src="images/capecod_profile.png" alt="Amitabha Ghosh">
 	</div>
 	<h1>Amitabha Ghosh</h1>
 	<p class="role">Proactive Intelligence<br><span class="company"><a href="https://www.apple.com" target="_blank">Apple Inc.</a></span></p>
@@ -64,18 +64,20 @@ rel="stylesheet">
 
 	<div class="content reveal">
 		<h2>Research Themes</h2>
-		<p>My research spans content-aware networking, data center and satellite traffic engineering, wireless traffic modeling, and algorithmic foundations for
-		sensor networks — summarized below:</p>
-		<ul class="theme-summary-list">
-			<li><strong>Video Delivery in Cellular Networks</strong> — exploiting video content characteristics to allocate cellular resources by packet importance.</li>
-			<li><strong>QAVA: Quota Aware Video Adaptation</strong> — adapting video quality to keep users within a monthly data quota.</li>
-			<li><strong>Traffic Management in Data Center Networks</strong> — semi-centralized architectures for joint rate control, routing, and scheduling.</li>
-			<li><strong>Wi-Fi Traffic Modeling in Public Hot-Spots</strong> — statistical models of customer arrivals, session durations, and occupancy.</li>
-			<li><strong>Fast Data Collection in Sensor Networks</strong> — approximation algorithms for scheduling and routing tree design in convergecast.</li>
-			<li><strong>Applications of Sensor Networks</strong> — structural health monitoring and intelligent parking lot guidance.</li>
-			<li><strong>Computational Geometry Methods</strong> — coverage, connectivity, and topology control for 3-D sensor deployments.</li>
-			<li><strong>IP-Routing and Transport in Satellite Networks</strong> — joint transport and routing optimization for GEO + LEO satellite constellations.</li>
-		</ul>
+		<p>During my Ph.D. and postdoc, my research primarily focused on content-aware networking, traffic engineering in data centers, satellite communication networks, wireless traffic modeling, and algorithmic foundations for
+		sensor networks, summarized below:</p>
+		<div class="theme-summary-card">
+			<ul class="theme-summary-list">
+				<li><a href="#can">Video Delivery in Cellular Networks</a> — exploiting video content characteristics to allocate cellular resources by packet importance</li>
+				<li><a href="#QAVA">QAVA: Quota Aware Video Adaptation</a> — adapting video quality to keep users within a monthly data budget</li>
+				<li><a href="#dctm">Traffic Management in Data Center Networks</a> — semi-centralized architectures for joint rate control, routing, and scheduling</li>
+				<li><a href="#wifi">Wi-Fi Traffic Modeling in Public Hot-Spots</a> — statistical models of customer arrivals, session durations, and occupancy</li>
+				<li><a href="#wsn">Fast Data Collection in Sensor Networks</a> — approximation algorithms for scheduling and routing tree design in convergecast</li>
+				<li><a href="#wsnappl">Applications of Sensor Networks</a> — structural health monitoring and intelligent parking lot guidance</li>
+				<li><a href="#cgm">Computational Geometry Methods</a> — coverage, connectivity, and topology control for 3D sensor deployments</li>
+				<li><a href="#satcom">IP-Routing and Transport in Satellite Networks</a> — joint transport and IP-routing optimization for GEO/LEO satellite constellations</li>
+			</ul>
+		</div>
 	</div>
 
 	<section class="topic-panel reveal" id="can">
@@ -232,7 +234,7 @@ rel="stylesheet">
 			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>
 		</button>
 		<div class="topic-text">
-			<h2>Approximation Algorithms for Fast Data Collection in Sensor Networks</h2>
+			<h2>Fast Data Collection in Sensor Networks</h2>
 			<p class="topic-lead">How fast can a sensor network gather data from every node without collisions or wasted energy?</p>
 			<p>Fast and periodic collection of aggregated data is of considerable interest for mission-critical and continuous monitoring applications — target
 			tracking, structural health monitoring, health care — that demand efficient, timely collection of large data volumes despite low sensor-radio
@@ -438,6 +440,6 @@ target="_blank">2013</a>, <a href="http://www.icccn.org/icccn14/WAM.html" target
 })();
 </script>
 
-<script src="site.js?v=4"></script>
+<script src="site.js?v=5"></script>
 </body>
 </html>
