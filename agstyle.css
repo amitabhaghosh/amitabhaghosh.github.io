@@ -763,7 +763,7 @@ footer.site-footer a {
   border: 1px dashed var(--color-accent-blue);
   border-radius: var(--radius);
   padding: 0.75em 1.4em;
-  margin: 0 0 1.2em;
+  margin: 1.6em 0 1.2em;
 }
 
 .fun-card p {
@@ -797,12 +797,14 @@ footer.site-footer a {
   margin-bottom: 0;
 }
 
-.topic-text p strong {
+.topic-text p strong,
+#intro p strong {
   color: var(--color-accent-vibrant);
   font-weight: 600;
 }
 
-.topic-text p em {
+.topic-text p em,
+#intro p em {
   color: var(--color-accent-vibrant);
   font-style: italic;
   font-weight: 500;

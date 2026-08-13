@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<script>if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Amitabha Ghosh — Research</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,7 +10,7 @@
 <link
 href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&family=Poppins:wght@600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap"
 rel="stylesheet">
-<link rel="stylesheet" href="agstyle.css?v=21">
+<link rel="stylesheet" href="agstyle.css?v=22">
 </head>
 <body>
 
@@ -231,7 +232,7 @@ rel="stylesheet">
 			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>
 		</button>
 		<div class="topic-text">
-			<h2>Fast Data Collection in Sensor Networks (Approximation Algorithms)</h2>
+			<h2>Approximation Algorithms for Fast Data Collection in Sensor Networks</h2>
 			<p class="topic-lead">How fast can a sensor network gather data from every node without collisions or wasted energy?</p>
 			<p>Fast and periodic collection of aggregated data is of considerable interest for mission-critical and continuous monitoring applications — target
 			tracking, structural health monitoring, health care — that demand efficient, timely collection of large data volumes despite low sensor-radio
@@ -279,8 +280,22 @@ rel="stylesheet">
 		<button type="button" class="topic-collapse-toggle" aria-expanded="true" aria-label="Collapse section">
 			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>
 		</button>
-		<div class="topic-media">
-			<img src="images/wsn_applications.jpg" alt="Applications of Sensor Networks">
+		<div class="topic-text">
+			<h2>Applications of Sensor Networks</h2>
+			<p class="topic-lead">Can inexpensive sensors reliably monitor a bridge's health or guide drivers to an open parking spot?</p>
+			<p>Wireless sensor networks have inspired tremendous research interest across smart homes, marine life monitoring, security-surveillance,
+			healthcare, and automotive applications. We focus on two: <strong>structural health monitoring (SHM)</strong> and an <strong>intelligent parking
+			lot guidance system</strong>.</p>
+			<div class="topic-pdf-wrap">
+				<object class="topic-pdf" data="images/research_wsn_apps.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" aria-label="Applications of Sensor Networks (PDF)">
+					<a href="images/research_wsn_apps.pdf">View the Applications of Sensor Networks diagram (PDF)</a>
+				</object>
+				<a class="topic-pdf-expand" href="images/research_wsn_apps.pdf" target="_blank">Tap to view full size &#8599;</a>
+			</div>
+			<p>For SHM, we design an optimal sensor placement strategy using mode shape analysis and an energy-efficient routing scheme, balancing estimation
+			accuracy against the cost of data collection — motivated by real bridge-collapse catastrophes underscoring the need for reliable monitoring. For
+			parking, we show that a combination of <em>magnetic and ultrasound sensors</em> can accurately detect vehicles, validated through a car-counting
+			experiment in a multi-storied university parking structure lasting over a day.</p>
 			<div class="topic-links">
 				<span class="topic-links-label">Related publications</span>
 				<a class="pill-btn" data-tooltip="Energy-Efficient Deployment Strategies in Structural Health Monitoring using Wireless Sensor Networks — J.
@@ -288,17 +303,6 @@ rel="stylesheet">
 				<a class="pill-btn" data-tooltip="Intelligent Parking Lot Application Using Wireless Sensor Networks — CTS, 2008"
 				href="http://anrg.usc.edu/~amitabhag/papers/CTS-2008.pdf">CTS 2008</a>
 			</div>
-		</div>
-		<div class="topic-text">
-			<h2>Applications of Sensor Networks</h2>
-			<p class="topic-lead">Can inexpensive sensors reliably monitor a bridge's health or guide drivers to an open parking spot?</p>
-			<p>Wireless sensor networks have inspired tremendous research interest across smart homes, marine life monitoring, security-surveillance,
-			healthcare, and automotive applications. We focus on two: <strong>structural health monitoring (SHM)</strong> and an <strong>intelligent parking
-			lot guidance system</strong>.</p>
-			<p>For SHM, we design an optimal sensor placement strategy using mode shape analysis and an energy-efficient routing scheme, balancing estimation
-			accuracy against the cost of data collection — motivated by real bridge-collapse catastrophes underscoring the need for reliable monitoring. For
-			parking, we show that a combination of <em>magnetic and ultrasound sensors</em> can accurately detect vehicles, validated through a car-counting
-			experiment in a multi-storied university parking structure lasting over a day.</p>
 		</div>
 	</section>
 
@@ -308,8 +312,23 @@ rel="stylesheet">
 		<button type="button" class="topic-collapse-toggle" aria-expanded="true" aria-label="Collapse section">
 			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>
 		</button>
-		<div class="topic-media">
-			<img src="images/coverage_connectivity_topologycontrol.jpg" alt="Computational Geometry Methods">
+		<div class="topic-text">
+			<h2>Computational Geometry Methods</h2>
+			<p class="topic-lead">How do you strategically deploy a sensor network that provides complete coverage of the region of interest and also stays connected
+			— even in three dimensions — using as little transmit power as possible?</p>
+			<p>Effective network coverage, connectivity, and topology control are fundamental to any sensor network. Coverage-connectivity means deploying an
+			optimal number of sensors at strategic locations so the network stays connected, provides complete coverage of the region of interest, and can route data
+			to a sink. Topology control means adjusting transmit power to reduce interference. Existing 2D techniques don't work in 3D due to the lack of directional
+			node ordering and higher algorithmic complexity.</p>
+			<div class="topic-pdf-wrap">
+				<object class="topic-pdf" data="images/research_cov_conn_topology.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" aria-label="Computational Geometry Methods (PDF)">
+					<a href="images/research_cov_conn_topology.pdf">View the Computational Geometry Methods diagram (PDF)</a>
+				</object>
+				<a class="topic-pdf-expand" href="images/research_cov_conn_topology.pdf" target="_blank">Tap to view full size &#8599;</a>
+			</div>
+			<p>In this work, we use computational geometry tools — <strong>Voronoi diagrams</strong>, orthographic projections, and spherical Delaunay triangulation — for
+			effective coverage, connectivity, and distributed topology control, including one of the first approaches to <em>opportunistically deploy both
+			static and mobile nodes</em> in a hybrid sensor network.</p>
 			<div class="topic-links">
 				<span class="topic-links-label">Related publications</span>
 				<a class="pill-btn" data-tooltip="Coverage Connectivity Issues in Wireless Sensor Networks: A Survey — Elsevier Pervasive and Mobile Computing,
@@ -322,17 +341,6 @@ rel="stylesheet">
 				href="http://anrg.usc.edu/~amitabhag/papers/SECON-2007.pdf">SECON 2007</a>
 			</div>
 		</div>
-		<div class="topic-text">
-			<h2>Computational Geometry Methods</h2>
-			<p class="topic-lead">How do you guarantee a sensor network stays connected — even in three dimensions — using as little transmit power as possible?</p>
-			<p>Effective network coverage, connectivity, and topology control are fundamental to any sensor network. Coverage-connectivity means deploying an
-			optimal number of sensors at strategic locations so the network stays connected and can route data to a sink; topology control means adjusting
-			transmit power to reduce interference. Existing 2-D techniques don't work in 3-D, due to the lack of directional node ordering and higher
-			algorithmic complexity.</p>
-			<p>We use computational geometry tools — <strong>Voronoi diagrams</strong>, orthographic projections, and spherical Delaunay triangulation — for
-			effective coverage, connectivity, and distributed topology control, including one of the first approaches to <em>opportunistically deploy both
-			static and mobile nodes</em> in a hybrid sensor network.</p>
-		</div>
 	</section>
 
 	<div class="dot-divider"><span class="dot orange"></span><span class="dot blue"></span></div>
@@ -341,16 +349,28 @@ rel="stylesheet">
 		<button type="button" class="topic-collapse-toggle" aria-expanded="true" aria-label="Collapse section">
 			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8l5 5 5-5"/></svg>
 		</button>
-		<div class="topic-media"><img src="images/satcom.jpg" alt="IP-Routing and Transport in Satellite Networks"></div>
 		<div class="topic-text">
 			<h2>IP-Routing and Transport in Satellite Networks</h2>
-			<p class="topic-lead">How do you route data efficiently across satellites in different orbits without leaning on ground stations for every hop?</p>
+			<p class="topic-lead">How do you route data efficiently across satellites in different orbits (e.g., GEO, LEO) without leaning on ground stations for every hop?</p>
 			<p>Efficient routing strategies combined with robust transport protocols are paramount in new-generation satellite networks spanning diverse
 			constellations at different orbits. Compared to older bent-pipe satellite systems with no onboard IP-routing, newer generations offer a lot more
 			flexibility — but require investigating <strong>cross-layer approaches</strong> for heterogeneous GEO + LEO satellite networks.</p>
 			<p>We propose <strong>JTRO-ASN</strong>, a joint transport and IP-routing optimization framework for adaptive satellite networks. It establishes
 			end-to-end routes in space using inter-satellite and inter-level SATCOM links, with <em>reduced ground station dependencies</em>, decreased
 			end-to-end latencies, and support for traffic prioritization across multiple available routes.</p>
+			<div class="topic-pdf-wrap">
+				<object class="topic-pdf" data="images/research_satellite.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" aria-label="IP-Routing and Transport in Satellite Networks (PDF)">
+					<a href="images/research_satellite.pdf">View the IP-Routing and Transport in Satellite Networks diagram (PDF)</a>
+				</object>
+				<a class="topic-pdf-expand" href="images/research_satellite.pdf" target="_blank">Tap to view full size &#8599;</a>
+			</div>
+			<p>The routing protocol organizes the network into GEO-satellite-centered domains — analogous to Autonomous Systems in the Internet — each tracking
+			<em>inter-satellite links (ISLs)</em> and <em>inter-layer links (ILLs)</em> via time-indexed graphs that predict topology changes from known orbital
+			trajectories, together with a hierarchical addressing scheme for LEO satellites and their footprints. Within each domain, JTRO-ASN solves a
+			<strong>multi-class cross-layer optimization</strong> problem that jointly computes end-to-end paths and flow rates, modeling per-class utility
+			functions for throughput- and delay-sensitive traffic, and supporting flexible multi-path routing to better exploit the satellite mesh topology than
+			traditional single-path schemes. Routing state is maintained through periodic broadcasts from the GEO satellites and neighbor-discovery <em>"HELLO"
+			messages</em> exchanged between LEO satellites.</p>
 			<div class="topic-links"></div>
 		</div>
 	</section>
