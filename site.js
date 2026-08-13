@@ -5,7 +5,12 @@
 	document.querySelectorAll('.sidebar-nav a.active, .quicknav-panel a.active').forEach(function (link) {
 		link.addEventListener('click', function (event) {
 			event.preventDefault();
-			window.scrollTo({ top: 0, behavior: 'smooth' });
+			var main = document.getElementById('main');
+			if (main) {
+				main.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			} else {
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			}
 		});
 	});
 
