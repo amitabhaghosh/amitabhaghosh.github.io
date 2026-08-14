@@ -34,6 +34,39 @@
 		});
 	});
 
+	var lightbox = document.getElementById('puzzle-lightbox');
+	if (lightbox) {
+		var lightboxImg = lightbox.querySelector('.lightbox-img');
+		var lightboxClose = lightbox.querySelector('.lightbox-close');
+
+		function openLightbox(href, alt) {
+			lightboxImg.src = href;
+			lightboxImg.alt = alt || '';
+			lightbox.hidden = false;
+		}
+
+		function closeLightbox() {
+			lightbox.hidden = true;
+			lightboxImg.src = '';
+		}
+
+		document.querySelectorAll('.puzzle-card').forEach(function (card) {
+			card.addEventListener('click', function (event) {
+				event.preventDefault();
+				var img = card.querySelector('img');
+				openLightbox(card.getAttribute('href'), img ? img.alt : '');
+			});
+		});
+
+		lightboxClose.addEventListener('click', closeLightbox);
+		lightbox.addEventListener('click', function (event) {
+			if (event.target === lightbox) closeLightbox();
+		});
+		document.addEventListener('keydown', function (event) {
+			if (event.key === 'Escape' && !lightbox.hidden) closeLightbox();
+		});
+	}
+
 	document.querySelectorAll('.topic-collapse-toggle').forEach(function (btn) {
 		btn.addEventListener('click', function () {
 			var topicPanel = btn.closest('.topic-panel');
