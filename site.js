@@ -23,6 +23,17 @@
 		});
 	});
 
+	document.querySelectorAll('.abstract-toggle').forEach(function (btn) {
+		btn.addEventListener('click', function () {
+			var entry = btn.closest('.entry');
+			var abstract = entry && entry.querySelector('.entry-abstract');
+			if (!abstract) return;
+			var expanded = btn.getAttribute('aria-expanded') === 'true';
+			btn.setAttribute('aria-expanded', String(!expanded));
+			abstract.hidden = expanded;
+		});
+	});
+
 	document.querySelectorAll('.topic-collapse-toggle').forEach(function (btn) {
 		btn.addEventListener('click', function () {
 			var topicPanel = btn.closest('.topic-panel');

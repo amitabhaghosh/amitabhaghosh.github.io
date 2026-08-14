@@ -624,6 +624,56 @@ footer.site-footer a {
   gap: 0.6em;
 }
 
+.abstract-toggle {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.abstract-toggle::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  margin-left: 0.1em;
+  border-right: 1.6px solid currentColor;
+  border-bottom: 1.6px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform var(--transition-fast);
+}
+
+.abstract-toggle[aria-expanded="true"]::after {
+  transform: rotate(225deg);
+}
+
+.entry-abstract {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px dashed var(--color-border);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+
+.entry-abstract p {
+  margin: 0 0 0.9em;
+}
+
+.entry-abstract p:last-child {
+  margin-bottom: 0;
+}
+
+.entry-abstract strong {
+  color: var(--color-accent-vibrant);
+  font-weight: 600;
+}
+
+.entry-abstract em {
+  color: var(--color-accent-vibrant);
+  font-style: italic;
+  font-weight: 500;
+}
+
 /* ---------------------------------------------------------------
    Topic panels (Research, Teaching)
    --------------------------------------------------------------- */
