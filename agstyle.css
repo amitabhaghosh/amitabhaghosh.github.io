@@ -808,6 +808,34 @@ footer.site-footer a {
   border-radius: 0 8px 8px 0;
 }
 
+.quote-card {
+  margin: 1.2em 0;
+  padding: 1.1em 1.6em;
+  border-left: 3px solid var(--color-accent-vibrant);
+  background: var(--color-accent-blue-soft);
+  border-radius: 0 8px 8px 0;
+}
+
+.quote-card p {
+  margin: 0 0 0.5em;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.quote-card cite {
+  display: block;
+  font-style: normal;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-text-muted);
+}
+
+
 .fun-card {
   background: var(--color-accent-blue-soft);
   border: 1px dashed var(--color-accent-blue);
@@ -986,13 +1014,15 @@ footer.site-footer a {
 }
 
 .topic-text p strong,
-#intro p strong {
+#intro p strong,
+#iridescent p strong {
   color: var(--color-accent-vibrant);
   font-weight: 600;
 }
 
 .topic-text p em,
-#intro p em {
+#intro p em,
+#iridescent p em {
   color: var(--color-accent-vibrant);
   font-style: italic;
   font-weight: 500;
